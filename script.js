@@ -1,5 +1,6 @@
 const product = document.querySelector(".products");
 const share = document.querySelector(".products-share");
+const productArrow = document.querySelector(".products-arrow");
 const container = document.querySelector(".container");
 product.addEventListener("mouseover", display);
 product.addEventListener("mouseout", displaynone);
@@ -10,13 +11,14 @@ var activeState = false;
 function display() {
   if (!activeState) {
     share.style.display = "flex";
+    productArrow.style.transform = "rotate(180deg)"
   } 
   
 }
 
 function displaynone() {
   share.style.display = "none";
-  
+  productArrow.style.transform = "rotate(0deg)"
 }
 
 
