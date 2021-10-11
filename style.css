@@ -15,6 +15,8 @@
   --color-white: #fff;
   --color-black: #000;
   --fontFamily: Montserrat, sans-serif;
+  --borderRadius: 4px;
+  --transitionTime: 250ms;
 }
 
 * {
@@ -133,7 +135,7 @@ header {
 }
 
 .products-share {
-  --color-lightgray2-lit: 90%;
+  --color-lightgray2-lit: 85%;
   position: absolute;
   color: var(--color-darkgray);
   background-image: linear-gradient(
@@ -148,7 +150,7 @@ header {
   align-items: center;
   display: none;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: var(--borderRadius);
   z-index: 2;
   box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0;
 }
@@ -223,7 +225,7 @@ header {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 5rem;
+  padding: 3rem;
   height: 100%;
   background-color: var(--color-lightgray2);
   background-size: cover;
@@ -288,8 +290,10 @@ header {
   );
   color: var(--color-white);
   font-weight: 700;
-  transition: 250ms ease;
+  transition: var(--transitionTime) ease;
   cursor: pointer;
+  border-radius: var(--borderRadius);
+
 }
 
 .gallery-left-1 .cta:hover,
