@@ -127,10 +127,6 @@ header {
   padding: 0.1em 0;
 }
 
-.products i:hover {
-  transition: 250ms ease;
-  transform: rotate(180deg);
-}
 
 .hidden {
   display: none;

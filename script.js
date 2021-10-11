@@ -12,12 +12,14 @@ function display() {
   if (!activeState) {
     share.style.display = "flex";
     productArrow.style.transform = "rotate(180deg)"
+    productArrow.style.transition = "250ms"
   } 
   
 }
 
 function displaynone() {
   share.style.display = "none";
+  productArrow.style.transition = "250ms"
   productArrow.style.transform = "rotate(0deg)"
 }
 
