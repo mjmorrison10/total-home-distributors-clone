@@ -1,0 +1,88 @@
+:root {
+  --color-darkgray-hue: 0;
+  --color-darkgray-sat: 0%;
+  --color-darkgray-lit: 20%;
+  --color-darkgray: hsl(
+    var(--color-darkgray-hue),
+    var(--color-darkgray-sat),
+    var(--color-darkgray-lit)
+  );
+  --color-lightgray: #888;
+  --color-lightgray2-hue: 0;
+  --color-lightgray2-sat: 0%;
+  --color-lightgray2-lit: 80%;
+  --color-lightgray2: hsl(0, 0%, 80%);
+  --color-white: #fff;
+  --color-black: #000;
+  --fontFamily: Montserrat, sans-serif;
+  --borderRadius: 2px;
+  --transitionTime: 250ms;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: var(--borderRadius);
+  padding: 50px 70px;
+  height: auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 56%);
+}
+
+.container h1 {
+    font: 22px Helvetica, Arial;
+    color: #424242;
+    text-align: left;
+}
+
+.container p {
+    font: 16px Helvetica, Arial;
+    color: #424242;
+    margin-top: 7px;
+}
+
+.container input {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 16px 18px;
+    background-position: 98% 50%;
+    cursor: auto;
+    border: 1px solid;
+    color: #333;
+    padding: 10px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.container button {
+    background: #464646;
+    color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: none;
+    padding: 10px 30px;
+    float: right;
+    margin-left: 10px;
+    box-shadow: 0px 4px 10px -3px grey;
+    text-transform: uppercase;
+}
