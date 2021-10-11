@@ -1,0 +1,328 @@
+:root {
+  --color-darkgray-hue: 0;
+  --color-darkgray-sat: 0%;
+  --color-darkgray-lit: 20%;
+  --color-darkgray: hsl(
+    var(--color-darkgray-hue),
+    var(--color-darkgray-sat),
+    var(--color-darkgray-lit)
+  );
+  --color-lightgray: #888;
+  --color-lightgray2: #cccccc;
+  --color-white: #fff;
+  --color-black: #000;
+  --fontFamily: Montserrat, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fontFamily);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-bottom: 0.8em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  transition: 250s;
+}
+
+.middle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.left-container {
+  flex: 1;
+}
+
+.container-message {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@media (min-width: 1500px) {
+  .container-message {
+    justify-content: flex-start;
+    margin-left: 5em;
+  }
+}
+
+.container-message span {
+  margin-top: 30px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  width: 250px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.nav ul {
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--color-darkgray);
+  font-weight: 500;
+}
+
+.nav ul i {
+  margin-left: 5px;
+  font-size: 0.7em;
+}
+
+.nav ul li {
+  /* margin: 0 20px; */
+  padding: 0 20px;
+}
+
+.nav-middle {
+  border-right: 2px solid black;
+}
+
+.products {
+  position: relative;
+  padding: 0.1em 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.products-share {
+  position: absolute;
+  content: "search";
+  color: var(--color-darkgray);
+  background-image: linear-gradient(
+    to right,
+    var(--color-white),
+    var(--color-lightgray2)
+  );
+  bottom: -2.5rem;
+  top: 1.2rem;
+  right: 0.75rem;
+  left: 0.75rem;
+  align-items: center;
+  display: none;
+  justify-content: center;
+  border-radius: 2px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 3px 11px 0;
+}
+
+.display {
+  min-height: 100vh;
+  background-size: auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  animation: 0s ease 0s 1 normal none running none;
+  background-image: url("https://le-cdn.hibuwebsites.com/7ad96194b5aa48289e3e0028a79726c9/dms3rep/multi/opt/Screen+Shot+2021-09-01+at+3.17.03+PM-1920w.png");
+  opacity: 1;
+  transition: opacity 0.75s ease-in-out 0s;
+}
+
+/* Display Section */
+.text-information {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+
+.text-information h1 {
+  width: 60%;
+  margin-bottom: 5rem;
+  font-weight: 700;
+  color: var(--color-darkgray);
+}
+
+.text-information p {
+  width: 60%;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.text-information .cta {
+  color: var(--color-darkgray);
+}
+
+.new-arrivals-gallery .title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6em;
+  margin-bottom: 1rem;
+}
+
+.gallery-1,
+.gallery-2,
+.gallery-3,
+.gallery-4,
+.gallery-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 1rem; */
+  height: 350px;
+}
+
+.gallery-left-1,
+.gallery-right-2,
+.gallery-left-3,
+.gallery-right-4,
+.gallery-left-5 {
+  flex: 0.8;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+  height: 100%;
+  background-color: var(--color-lightgray2);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url("https://le-cdn.hibuwebsites.com/7ad96194b5aa48289e3e0028a79726c9/dms3rep/multi/opt/bg-1920w.png");
+}
+
+.gallery-right-1,
+.gallery-left-2,
+.gallery-right-3,
+.gallery-left-4,
+.gallery-right-5 {
+  flex: 1.5;
+  height: 100%;
+  background-size: cover;
+  background-position: 25% 20%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url("https://le-cdn.hibuwebsites.com/7ad96194b5aa48289e3e0028a79726c9/dms3rep/multi/opt/SAHARA-dbf75f92-1920w.JPG");
+}
+
+.gallery-left-2 {
+  background-image: url("https://le-cdn.hibuwebsites.com/7ad96194b5aa48289e3e0028a79726c9/dms3rep/multi/opt/gleeze_1111-1920w.JPG");
+  background-position: 50% 50%;
+}
+
+.gallery-right-3 {
+  background-image: url("https://le-cdn.hibuwebsites.com/7ad96194b5aa48289e3e0028a79726c9/dms3rep/multi/opt/CARRARA_24_ROOM%2BSCENE%2B-1920w.jpg");
+  background-position: 50% 50%;
+}
+
+.gallery-left-4 {
+  background-image: url("https://le-cdn.hibuwebsites.com/7ad96194b5aa48289e3e0028a79726c9/dms3rep/multi/opt/amb_metax_120_02-3ea0dfc6-1920w.JPG");
+  background-position: 50% 50%;
+}
+
+.gallery-right-5 {
+  background-image: url("https://le-cdn.hibuwebsites.com/7ad96194b5aa48289e3e0028a79726c9/dms3rep/multi/opt/iu_brooklyn_cemento-toupe-floor-24x24_cemento-argent-wall-24x48_living-room-1920w.jpg");
+  background-position: 50% 100%;
+}
+
+.gallery-left-1 p,
+.gallery-right-2 p,
+.gallery-left-3 p,
+.gallery-right-4 p,
+.gallery-left-5 p {
+  margin: 0.8em 0;
+}
+
+.gallery-left-1 .cta,
+.gallery-right-2 .cta,
+.gallery-left-3 .cta,
+.gallery-right-4 .cta,
+.gallery-left-5 .cta {
+  padding: 1em 7em;
+  background-color: hsl(
+    var(--color-darkgray-hue),
+    var(--color-darkgray-sat),
+    var(--color-darkgray-lit)
+  );
+  color: var(--color-white);
+  font-weight: 700;
+  transition: 250ms ease;
+  cursor: pointer;
+}
+
+.gallery-left-1 .cta:hover,
+.gallery-right-2 .cta:hover,
+.gallery-left-3 .cta:hover,
+.gallery-right-4 .cta:hover,
+.gallery-left-5 .cta:hover {
+  --color-darkgray-lit: 30%;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  background-repeat: no-repeat;
+  background-image: url("https://le-cdn.hibuwebsites.com/7ad96194b5aa48289e3e0028a79726c9/dms3rep/multi/opt/footer-1920w.png");
+  background-size: cover;
+}
+
+.social-links i {
+  margin: 1rem;
+  font-size: 1.8em;
+  font-weight: 400;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em 0;
+  font-size: 0.6em;
+  font-weight: 500;
+}
+
+footer ol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer ol > li + li {
+  margin: 1em 0;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+  border-left: 1px solid #bbb;
+}
