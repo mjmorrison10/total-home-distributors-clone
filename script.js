@@ -28,7 +28,7 @@ $(document).ready(function () {
   $(".container").css("display", "flex");
   $(window).scroll(function () {
     var height = $(window).scrollTop();
-    if (height > 275) {
+    if (height > 175) {
       console.log('test');
       container.style.display = "none";
     } else {

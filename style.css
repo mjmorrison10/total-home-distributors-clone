@@ -129,7 +129,6 @@ header {
   padding: 0.1em 0;
 }
 
-
 .hidden {
   display: none;
 }
@@ -141,7 +140,11 @@ header {
   background-image: linear-gradient(
     to right,
     var(--color-white),
-    hsl(var(--color-lightgray2-hue), var(--color-lightgray2-sat), var(--color-lightgray2-lit))
+    hsl(
+      var(--color-lightgray2-hue),
+      var(--color-lightgray2-sat),
+      var(--color-lightgray2-lit)
+    )
   );
   bottom: -2.5rem;
   top: 1.2rem;
@@ -293,7 +296,6 @@ header {
   transition: var(--transitionTime) ease;
   cursor: pointer;
   border-radius: var(--borderRadius);
-
 }
 
 .gallery-left-1 .cta:hover,
@@ -344,4 +346,66 @@ footer ol > li + li {
   margin-left: 0.5em;
   padding-left: 0.5em;
   border-left: 1px solid #bbb;
+}
+
+.about-container {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 300px;
+  padding-bottom: 50px;
+}
+
+.about-container-left {
+  padding: 2rem;
+  height: auto;
+  min-height: 50vh;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.about-container-right {
+  height: auto;
+  min-height: 50vh;
+  border-left: 1px solid black;
+  flex: 1;
+}
+
+.about-container-left-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.about-container-left-wrapper h1 {
+  margin: 0.5rem 0;
+}
+
+.about-container-left-logos {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.business-hours {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1rem;
+}
+
+.about-container-right {
+  padding-left: 1rem;
+}
+
+.associations {
+  padding-left: 2rem;
+  list-style-type: disc;
 }
