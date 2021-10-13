@@ -523,3 +523,7 @@ footer ol > li + li {
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+.dl-btn:hover {
+  background-color: hsl(0, 0%, 20%);
+}
