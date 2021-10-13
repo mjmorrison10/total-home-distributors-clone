@@ -391,6 +391,7 @@ footer ol > li + li {
 .contact-us-container-right-wrapper h1 {
   color: var(--color-darkgray);
   margin: 0.5rem 0;
+  text-transform: capitalize;
 }
 
 .about-container-left-logos {
@@ -465,4 +466,60 @@ footer ol > li + li {
   font-weight: 700;
   color: var(--color-white);
   background-color: var(--color-black);
+}
+
+.downloads {
+  padding-top: 300px;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloads-header {
+  margin-top: 1rem;
+  height: 3rem;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.downloads-header ol {
+  display: flex;
+  text-transform: capitalize;
+  list-style-type: none;
+  color: var(--color-white);
+  margin-right: 1rem;
+}
+
+.downloads-header ol li + li {
+  margin-left: 3rem;
+}
+
+.main-header-downloads {
+  padding-bottom: 0px;
+}
+
+.downloads-wrapper h1 {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.dl-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 1rem 4rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
